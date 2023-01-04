@@ -1,0 +1,218 @@
+
+
+@media(max-width: 1050px){
+    .centerblock__about-inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .centerblock__about-right,
+    .centerblock__about-left{
+        float: none;
+        max-width: 700px ;
+    }
+}
+@media(max-width: 980px){
+    .company__name{
+        font-size: 60px;
+        line-height: 54px;
+    }
+    .header__contacts{
+        margin-top: 15px;
+    }
+    .header__phone{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .header__feedback{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .header__logo a:after{
+        font-size: 14px;
+    }
+    .logo-about{
+        font-size: 12px;
+    }
+    .slider__arrows{
+        width: 18px;
+        height: 35px;
+    }
+}
+@media(max-width: 850px){
+  
+    .header__top{
+        min-height: 170px;
+        padding-top: 30px;
+    }
+    .company__name{
+        font-size: 40px;
+        line-height: 32px;
+    }
+    .header__menu li{
+        font-size: 20px;
+    }
+    .symbol{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 650px){
+    .header__inner{
+        flex-wrap: wrap;
+    }
+    .header__logo{
+        display: none;
+    }
+    #modal{
+        width: 313px;
+        min-height: 385px;
+    }
+    #modal p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    input, 
+    label,
+    textarea{
+        display:block;
+        width: 100%;
+        margin-bottom: 30px;
+        width: 240px;
+        height: 30px;
+        padding: 0 10px;
+    }
+    #modal.fancybox-content{
+        padding: 10px 25px;
+    }
+}
+
+@media(max-width: 600px){
+    .header__menu li{
+        font-size: 16px;
+    }
+    .symbol{
+        font-size: 16px;
+    }
+    .footer{
+        min-height: 320px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__items{
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 250px;
+        padding: 0 130px;
+    }
+    .footer__copy,
+    .footer__item-menu,
+    .footer__item-menu-company{
+        padding-top: 20px;
+    }   
+    .footer__copy,
+    .footer__item-menu{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .footer__item-menu-company{
+        margin-left: 30px;
+    }
+    .footer__item-menu{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 550px){
+    .footer__items{
+        padding: 0 110px;
+    }
+}
+
+@media(max-width: 500px){
+    // body.lock{
+    //     overflow: hidden;
+    // }
+    .header__menu{
+        padding: 10px 0;
+        min-height: 50px;
+        display: block;
+    }
+    .header__btn-menu{
+        float: right;
+    }
+    .header__menu ul.active{
+        display: block;
+    }
+    .header__btn-menu .active{
+        display: block;
+    }
+    .header__btn-menu{
+        display: block;
+    }
+    .header__menu ul{
+        display: none;
+        margin-top: 40px;
+        background-color: #777777;
+        z-index: 50;
+    }
+    .header__menu ul li{
+        font-size: 20px;
+        display: block;
+    }
+    .header__inner{
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .header__feedback{
+        margin: 0 auto;
+    }
+    .company__name{
+        padding: 0 30px;
+    }
+    .header__contacts{
+        padding: 0 30px;
+    }
+    .content__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .centerblock__items{
+        justify-content: center;
+    }
+    .footer__items{
+        padding: 0 90px;
+    }
+    .symbol{
+        display: none;
+    }
+    .price__excel{
+        display: none;
+    }
+    .leftblock{
+        padding-left: 75px;
+        margin-bottom: 30px; 
+    }
+}
+
+@media(max-width: 450px){
+    .footer__items{
+        padding: 0 60px;
+    }
+}
+
+@media(max-width: 400px){
+    .footer__items{
+        min-width: 250px; 
+        padding: 0 40px;  
+    }
+}
+
+@media(max-width: 350px){
+    .footer__items{
+        padding: 0 20px;  
+    }
+}
+
+
