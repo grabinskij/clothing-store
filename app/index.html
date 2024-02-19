@@ -316,18 +316,21 @@
     </div>
     </footer> 
 
-    
+
     <div style="display: none;" id="modal">
         <form id="file_form" action="">
             <button data-fancybox-close class="btn"><img src="img/close.png" alt=""></button>
             <p>Feedback</p>
             <label>Your name *<input type="text" name="name_f" id="name_f" autocomplete="on" class="in_pl" placeholder=" "></label>
-            <label>Phone *<input type="tel" name="tel_f" id="tel_f" autocomplete="on" class="in_pl"  placeholder=" "></label>
-            <label>Email *<input type="email" name="contact_f" id="contact_f" autocomplete="on" class="in_pl"  placeholder=" "></label>
-            <label>Message<textarea></textarea></label>
-            <input type="submit" value="SEND" name="submit" id="sub_f" onclick="frmotpr();"/>
+            <label>Phone *<input type="tel" name="tel_f" id="tel_f" autocomplete="on" class="in_pl" placeholder=" "></label>
+            <label>Email *<input type="email" name="contact_f" id="contact_f" autocomplete="on" class="in_pl" placeholder=" "></label>
+            <label>Message<textarea id="message_f"></textarea></label>
+            <input type="submit" value="SEND" name="submit" id="sub_f" onclick="validateForm();"/>
+            <div id="error_message" style="display: none; color: red;"></div>
+            <div id="success_message" style="display: none; color: green;"></div>
         </form>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>

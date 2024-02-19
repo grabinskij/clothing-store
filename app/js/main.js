@@ -31,35 +31,63 @@ $('.slider').slick({
 });
 });
 
-$(function frmotpr(){
-    var field = new Array("name_f", "contact_f", "mssg_f", "tel_f");
-    $("#file_form").submit(function() {
-        var error=0;
-        $("#file_form").find(":input").each(function() {
-            for(var i=0;i<field.length;i++){
-                if($(this).attr("name")==field[i]){
-                    if(!$(this).val()){
-                        $(this).addClass('notvalid');
-                        error=1;    
-                    }
-                    else{
-                        $(this).removeClass('notvalid');
-                    }
-                }                       
-            }               
-       })
-        if(error==0){
-        return true;
-        }else{ var err_text = "";
-        if(error==1)  err_text="Поле обязательно для заполнения";
-        $("#messenger").html(err_text); 
-        $("#messenger").fadeIn("slow"); 
-        return false;
-        }
-    })
+
+
+function validateForm() {
+  var name = document.getElementById('name_f').value.trim();
+  var phone = document.getElementById('tel_f').value.trim();
+  var email = document.getElementById('contact_f').value.trim();
+  var message = document.getElementById('message_f').value.trim();
+
+  var error = "";
+
+  if (name === "") {
+      error += "Name field is required.<br>";
+  }
+
+  if (phone === "") {
+      error += "Phone field is required.<br>";
+  }
+
+  if (email === "") {
+      error += "Email field is required.<br>";
+  } else if (!isValidEmail(email)) {
+      error += "Invalid email address.<br>";
+  }
+
+  if (message === "") {
+      error += "Message field is required.<br>";
+  }
+
+  if (error !== "") {
+      document.getElementById('error_message').innerHTML = error;
+      document.getElementById('error_message').style.display = "block";
+      document.getElementById('success_message').style.display = "none";
+  } else {
+      document.getElementById('error_message').style.display = "none";
+      document.getElementById('success_message').innerHTML = "Form submitted successfully!";
+      document.getElementById('success_message').style.display = "block";
+      resetForm();
+  }
+}
+
+function isValidEmail(email) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function resetForm() {
+  document.getElementById('file_form').reset();
+}
+
+$(document).ready(function() {
+  $('#sub_f').click(function() {
+      event.preventDefault();
+      validateForm();
+  });
 });
 
-// Код для меню і бургер-меню
+
 
 $('.header__btn-menu, .header__menu ul li a').click(function(event){
     $('.header__btn-menu, .header__menu ul').toggleClass('active');
