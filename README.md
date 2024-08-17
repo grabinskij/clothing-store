@@ -1,4 +1,4 @@
-# 🚀 My Portfolio
+# 🚀 Clothing Store Landing Page
 
 Welcome to the simple Clothing Store Landing Page repository! This project is designed to showcase a modern and stylish landing page for a clothing store, aiming to provide an attractive and user-friendly experience for visitors.
 
