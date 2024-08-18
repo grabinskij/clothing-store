@@ -1,6 +1,6 @@
 # 🚀 Clothing Store Landing Page
 
-Welcome to the simple Clothing Store Landing Page repository! This project is designed to showcase a modern and stylish landing page for a clothing store, aiming to provide an attractive and user-friendly experience for visitors.
+Welcome to the simple **Clothing Store Landing Page** repository! This project is designed to showcase a modern and stylish landing page for a clothing store, aiming to provide an attractive and user-friendly experience for visitors.
 
 <br><br>
 
@@ -30,7 +30,7 @@ This project is open-source and available under the MIT License.
 
 ## 🔥 How to Run Locally
 
-To view the portfolio on your local machine:
+To view the project on your local machine:
 
 1. **Clone this repository**:
    ```bash
